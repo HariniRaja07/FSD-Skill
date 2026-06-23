@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 id="message">Welcome to the Employee Management Portal</h2>
+
+    <button onclick="changeText()">View Announcement</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("message").innerHTML =
+            "Annual Performance Review Meeting is scheduled for next Monday at 10:00 AM.";
+        }
+    </script>
+
+</body>
+</html>
